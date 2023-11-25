@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactions</title>
+</head>
+<body>
+
+    <h1>Interação com o Usuário</h1>
+
+    <form id="userForm">
+        <label for="name">Digite seu nome:</label>
+        <input type="text" id="name" required>
+        <button type="button" onclick="interacao1()">Interação 1</button>
+        <button type="button" onclick="interacao2()">Interação 2</button>
+    </form>
+
+    <div id="respostaFinal"></div>
+
+    <script>
+        function interacao1() {
+            var nome = document.getElementById('name').value;
+            document.getElementById('respostaFinal').innerHTML = "Olá, " + nome + "! Primeira interação concluída.";
+        }
+
+        function interacao2() {
+            var nome = document.getElementById('name').value;
+            document.getElementById('respostaFinal').innerHTML = "Parabéns, " + nome + "! Segunda interação realizada com sucesso.";
+        }
+    </script>
+
+</body>
+</html>
